@@ -58,8 +58,8 @@ Pycon is licensed under the [License Name, e.g. MIT, GPL, etc.]. See the [LICENS
 ## Contact
 -------
 
-* Email: [smthubakgale@gmail.com](mailto:your-email-address)
-* Twitter: [your Twitter handle](https://twitter.com/your-twitter-handle)
+* Email: [smthubakgale@gmail.com](mailto:smthubakgale@gmail.com)
+* Twitter: [@therealMabalane](https://twitter.com/@therealMabalane)
 * GitHub: [https://github.com/smthubakgale](https://github.com/smthubakgale)
 
 ## Download
