@@ -48,6 +48,10 @@ body {
   color: #ccc;
 }
 
+.top-nav .sign-up-link{
+  margin-left: auto;
+}
+
 /* Side Navigation */
 .side-nav {
   flex-basis: 250px;
