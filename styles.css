@@ -51,7 +51,12 @@ body {
 .top-nav .sign-up-link{
   margin-left: auto;
 }
-
+.top-nav .logo img{
+  width:25px; 
+  height:25px; 
+  margin-top:-5px; 
+  margin-bottom:-8px;
+}
 /* Side Navigation */
 .side-nav {
   flex-basis: 250px;
