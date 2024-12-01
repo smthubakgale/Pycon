@@ -76,3 +76,20 @@ if (window.innerWidth > 768) {
 mobileNav.classList.remove('active');
 }
 });
+// Add event listener to checkboxes
+document.addEventListener("DOMContentLoaded", function () {
+  var checkboxes = document.querySelectorAll(".side-nav .docs-nav input[type='checkbox']");
+
+  checkboxes.forEach(function (checkbox) {
+    checkbox.addEventListener("click", function () {
+      var label = checkbox.nextElementSibling;
+      var ul = label.nextElementSibling;
+
+      if (checkbox.checked) {
+        ul.style.display = "block";
+      } else {
+        ul.style.display = "none";
+      }
+    });
+  });
+});
