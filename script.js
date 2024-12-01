@@ -76,3 +76,39 @@ window.addEventListener('resize', () => {
         mobileNav.classList.remove('active');
     }
 });
+
+// Mobile navigation
+document.addEventListener('click', event => {
+    if (event.target.classList.contains('mobile-nav-link')) {
+        mobileNav.classList.remove('active');
+    }
+});
+
+// Scroll to top
+const scrollToTopButton = document.querySelector('.scroll-to-top');
+scrollToTopButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Dark mode toggle
+const darkModeToggle = document.querySelector('.dark-mode-toggle');
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
+// Search functionality
+const searchInput = document.querySelector('.search-input');
+const searchResults = document.querySelector('.search-results');
+searchInput.addEventListener('input', () => {
+    const searchTerm = searchInput.value.toLowerCase();
+    const searchResultsList = searchResults.querySelector('ul');
+    searchResultsList.innerHTML = '';
+    sections.forEach(section => {
+        const sectionTitle = section.querySelector('h1').textContent.toLowerCase();
+        if (sectionTitle.includes(searchTerm)) {
+            const searchResult = document.createElement('li');
+            searchResult.innerHTML = `<a href="#${section.id}">${sectionTitle}</a>`;
+            searchResultsList.appendChild(searchResult);
+        }
+    });
+});
