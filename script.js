@@ -1,22 +1,13 @@
 // Get elements
-const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-const dropdownMenus = document.querySelectorAll('.dropdown-menu');
+const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
 const aside = document.querySelector('.aside');
 const overlay = document.querySelector('.overlay');
-const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
 const scrollTOTopButton = document.querySelector('.scroll-to-top');
 const darkModeToggle = document.querySelector('.dark-mode-toggle');
 const searchInput = document.querySelector('.search-input');
 const searchResults = document.querySelector('.search-results');
 
 // Add event listeners
-dropdownToggles.forEach((toggle) => {
-    toggle.addEventListener('click', () => {
-        const dropdownMenu = toggle.nextElementSibling;
-        dropdownMenu.classList.toggle('active');
-    });
-});
-
 mobileNavToggle.addEventListener('click', () => {
     aside.classList.toggle('active');
     overlay.classList.toggle('active');
@@ -39,7 +30,6 @@ searchInput.addEventListener('input', () => {
     const searchTerm = searchInput.value.toLowerCase();
     const searchResultsList = searchResults.querySelector('ul');
     searchResultsList.innerHTML = '';
-    // Assume you have a function to fetch search results
     const results = fetchSearchResults(searchTerm);
     results.forEach((result) => {
         const listItem = document.createElement('li');
@@ -74,3 +64,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+ Dropdown menu toggling (not required with CSS-only dropdowns)
+ const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+ dropdownToggles.forEach((toggle) => {
+     toggle.addEventListener('click', () => {
+         const dropdownMenu = toggle.nextElementSibling;
+         dropdownMenu.classList.toggle('active');
+     });
+ });
