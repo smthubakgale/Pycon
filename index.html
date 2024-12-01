@@ -10,22 +10,32 @@
     <header class="top-nav">
         <nav>
             <ul>
+                <li class="home-link">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="pricing-link">
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
                 <li class="logo">
                     <a href="#">
                         <img src="logo.png" alt="Pycon Logo" width="40" height="40">
                     </a>
                 </li>
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#pricing" class="nav-link">Pricing</a></li>
-                <li class="right-align">
+                <li class="sign-up-link">
                     <a href="#sign-up" class="nav-link">Sign Up</a>
+                </li>
+                <li class="sign-in-link">
                     <a href="#sign-in" class="nav-link">Sign In</a>
+                </li>
+                <li style="float: right;">
+                    <button class="expand-btn">Expand Side Nav</button>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <aside class="side-nav">
+        <aside class="side-nav minimized">
+            <button class="minimize-btn">Minimize</button>
             <nav class="docs-nav">
                 <ul>
                     <li><a href="#introduction" class="nav-link">Introduction</a></li>
@@ -56,7 +66,7 @@
                 </ul>
             </nav>
         </aside>
-        <section class="main-content">
+        <div class="main-content">
             <section id="home" class="section active">
                 <h1>Home</h1>
                 <p>Welcome to Pycon homepage.</p>
@@ -88,14 +98,15 @@
                     <button>Sign In</button>
                 </form>
             </section>
-            <section id="introduction" class="section hidden">
+                       <section id="introduction" class="section hidden">
                 <h1>Introduction</h1>
                 <p>Welcome to Pycon introduction.</p>
             </section>
             <section id="user-guide" class="section hidden">
                 <h1>User Guide</h1>
                 <p>Pycon user guide content.</p>
-            </section>            <section id="installation" class="section hidden">
+            </section>
+            <section id="installation" class="section hidden">
                 <h1>Installation</h1>
                 <p>Pycon installation guide.</p>
                 <ol>
@@ -158,9 +169,12 @@
                     <li>Response formats</li>
                 </ol>
             </section>
-        </section>
+        </div>
     </main>
+    <footer>
+        <p>&copy; 2024 Pycon. All rights reserved.</p>
+        <p><a href="#">Contact Us</a> | <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
-            <section id="installation" class="section hidden
