@@ -3,141 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pycon Documentation</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation -->
     <header class="top-nav">
         <nav>
             <ul>
-                <li class="home-link">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="pricing-link">
-                    <a href="#pricing" class="nav-link">Pricing</a>
-                </li>
-                <li class="logo">
-                    <a href="#">
-                        <img src="logo.png" alt="Pycon Logo" width="40" height="40">
-                    </a>
-                </li>
-                <li class="sign-up-link">
-                    <a href="#sign-up" class="nav-link">Sign Up</a>
-                </li>
-                <li class="sign-in-link">
-                    <a href="#sign-in" class="nav-link">Sign In</a>
-                </li>
-                <li class="mobile-nav-toggle">
-                    <button>Menu</button>
-                </li>
+                <li><a href="#section1" class="nav-link">Section 1</a></li>
+                <li><a href="#section2" class="nav-link">Section 2</a></li>
+                <li><a href="#section3" class="nav-link">Section 3</a></li>
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <aside class="aside">
-            <nav class="docs-nav">
-                <ul>
-                    <li class="dropdown">
-                        <button class="dropdown-toggle">User Guide</button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#installation">Installation</a></li>
-                            <li><a href="#upgrades">Upgrades</a></li>
-                            <li><a href="#configuration">Configuration</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <button class="dropdown-toggle">Tutorials</button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#tutorial-1">Tutorial 1</a></li>
-                            <li><a href="#tutorial-2">Tutorial 2</a></li>
-                            <li><a href="#tutorial-3">Tutorial 3</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#api-reference" class="nav-link">API Reference</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <div class="main-content">
-            <section id="home" class="section">
-                <h1>Home</h1>
-                <p>Welcome to Pycon homepage.</p>
-            </section>
-            <section id="pricing" class="section">
-                <h1>Pricing</h1>
-                <p>Pycon pricing plans.</p>
-                <ul>
-                    <li>Plan 1: $9.99/month</li>
-                    <li>Plan 2: $19.99/month</li>
-                    <li>Plan 3: $29.99/month</li>
-                </ul>
-            </section>
-            <section id="sign-up" class="section">
-                <h1>Sign Up</h1>
-                <p>Create a Pycon account.</p>
-                <form>
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Password">
-                    <button>Sign Up</button>
-                </form>
-            </section>
-            <section id="sign-in" class="section">
-                <h1>Sign In</h1>
-                <p>Log in to your Pycon account.</p>
-                <form>
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Password">
-                    <button>Sign In</button>
-                </form>
-            </section>
-            <section id="installation" class="section">
-                <h1>Installation</h1>
-                <p>Pycon installation guide.</p>
-                <ol>
-                    <li>Step 1: Download Pycon</li>
-                    <li>Step 2: Install Pycon</li>
-                    <li>Step 3: Configure Pycon</li>
-                </ol>
-            </section>
-            <section id="upgrades" class="section">
-                <h1>Upgrades</h1>
-                <p>Pycon upgrades guide.</p>
-                <ol>
-                    <li>Step 1: Check for updates</li>
-                    <li>Step 2: Download update</li>
-                    <li>Step 3: Install update</li>
-                </ol>
-            </section>
-            <section id="configuration" class="section">
-                <h1>Configuration</h1>
-                <p>Pycon configuration guide.</p>
-            </section>
-                        <section id="tutorial-1" class="section">
-                <h1>Tutorial 1</h1>
-                <p>Pycon tutorial 1.</p>
-            </section>
-            <section id="tutorial-2" class="section">
-                <h1>Tutorial 2</h1>
-                <p>Pycon tutorial 2.</p>
-            </section>
-            <section id="tutorial-3" class="section">
-                <h1>Tutorial 3</h1>
-                <p>Pycon tutorial 3.</p>
-            </section>
-            <section id="api-reference" class="section">
-                <h1>API Reference</h1>
-                <p>Pycon API reference.</p>
-            </section>
+
+    <!-- Side Navigation -->
+    <aside class="side-nav">
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link dropdown">Dropdown 1</a>
+                    <ul class="sub-nav">
+                        <li><a href="#">Sub-item 1</a></li>
+                        <li><a href="#">Sub-item 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav-link dropdown">Dropdown 2</a>
+                    <ul class="sub-nav">
+                        <li><a href="#">Sub-item 1</a></li>
+                        <li><a href="#">Sub-item 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section id="section1" class="section">
+            <h2>Section 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <section id="section2" class="section">
+            <h2>Section 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <section id="section3" class="section">
+            <h2>Section 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+    </main>
+
+    <!-- Mobile Navigation -->
+    <button class="mobile-nav-toggle">Toggle Mobile Navigation</button>
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#section1" class="nav-link">Section 1</a></li>
+            <li><a href="#section2" class="nav-link">Section 2</a></li>
+            <li><a href="#section3" class="nav-link">Section 3</a></li>
+        </ul>
+    </nav>
+
+    <!-- Modals -->
+    <div class="modal">
+        <div class="modal-content">
+            <h2>Modal Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="close-button">Close</button>
         </div>
     </div>
-    <div class="overlay"></div>
-    <footer class="footer">
-        <p>&copy; 2024 Pycon. All rights reserved.</p>
-        <ul>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">FAQ</a></li>
-        </ul>
-    </footer>
+
+    <!-- Accordions -->
+    <div class="accordion">
+        <button class="accordion-trigger">Accordion Trigger</button>
+        <div class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+
+    <!-- Alerts -->
+    <div class="alert">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="close-button">Close</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
