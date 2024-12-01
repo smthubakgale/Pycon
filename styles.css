@@ -86,7 +86,7 @@ body {
   display: none;
 }
 
-.side-nav .docs-nav input[type="checkbox"]:checked + label + ul {
+.side-nav .docs-nav input[type="checkbox"]:checked + ul {
   display: block;
 }
 
@@ -99,14 +99,6 @@ body {
   color: #fff;
 }
 
-.side-nav .docs-nav ul ul {
-  display: none;
-  padding-left: 20px;
-}
-
-.side-nav .docs-nav ul ul li {
-  margin-bottom: 5px;
-}
 
 /* Main Content */
 
