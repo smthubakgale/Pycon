@@ -79,6 +79,7 @@ mobileNav.classList.remove('active');
 });
 
 asideToggle.addEventListener('click', () => {
+  console.log("A");
   sideNav.style.display = sideNav.style.display === 'block' ? 'none' : 'block';
 });
 
