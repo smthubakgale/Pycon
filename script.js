@@ -70,10 +70,9 @@ init();
 // Add event listener for window resize
 window.addEventListener('resize', () => {
   
-if (window.innerWidth > 768) {
- 
-}
-  
+  if (window.innerWidth > 768) {
+   
+  } 
 });
 
 asideToggle.addEventListener('click', () => { 
@@ -85,10 +84,7 @@ asideToggle.addEventListener('click', () => {
    }
 });
 
-document.addEventListener('click', (event) => {
-
-  console.log(docsNav.contains(event.target) , sideNav.contains(event.target));
-  
+document.addEventListener('click', (event) => { 
   if (!docsNav.contains(event.target) && sideNav.contains(event.target)) { 
     sideNav.classList.remove('mob-nav');
   }
