@@ -17,7 +17,7 @@ const asideToggle = document.querySelector('.aside-toggle');
 navLinks.forEach(link => link.addEventListener('click', handleNavLinkClick));
 subNavTriggers.forEach(trigger => trigger.addEventListener('mouseover', handleSubNavTrigger));
 subNavTriggers.forEach(trigger => trigger.addEventListener('mouseout', handleSubNavTrigger));
-mobileNavToggle.addEventListener('click', handleMobileNavToggle);
+//mobileNavToggle.addEventListener('click', handleMobileNavToggle);
 accordionTriggers.forEach(trigger => trigger.addEventListener('click', handleAccordionTrigger));
 alertCloseButtons.forEach(button => button.addEventListener('click', handleAlertClose));
 
