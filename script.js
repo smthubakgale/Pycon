@@ -1,75 +1,78 @@
 // Get elements
+const topNav = document.querySelector('.top-nav');
+const sideNav = document.querySelector('.side-nav');
+const mainContent = document.querySelector('.main-content');
 const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-const aside = document.querySelector('.aside');
-const overlay = document.querySelector('.overlay');
-const scrollTOTopButton = document.querySelector('.scroll-to-top');
-const darkModeToggle = document.querySelector('.dark-mode-toggle');
-const searchInput = document.querySelector('.search-input');
-const searchResults = document.querySelector('.search-results');
+const mobileNav = document.querySelector('.mobile-nav');
+const sections = document.querySelectorAll('.section');
+const navLinks = document.querySelectorAll('.nav-link');
+const subNavTriggers = document.querySelectorAll('.dropdown');
+const subNavs = document.querySelectorAll('.sub-nav');
+const modals = document.querySelectorAll('.modal');
+const accordionTriggers = document.querySelectorAll('.accordion');
+const alertCloseButtons = document.querySelectorAll('.alert .close-button');
 
 // Add event listeners
-mobileNavToggle.addEventListener('click', () => {
-    aside.classList.toggle('active');
-    overlay.classList.toggle('active');
-});
-
-overlay.addEventListener('click', () => {
-    aside.classList.remove('active');
-    overlay.classList.remove('active');
-});
-
-scrollTOTopButton.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
-darkModeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-});
-
-searchInput.addEventListener('input', () => {
-    const searchTerm = searchInput.value.toLowerCase();
-    const searchResultsList = searchResults.querySelector('ul');
-    searchResultsList.innerHTML = '';
-    const results = fetchSearchResults(searchTerm);
-    results.forEach((result) => {
-        const listItem = document.createElement('li');
-        const link = document.createElement('a');
-        link.href = result.url;
-        link.textContent = result.title;
-        listItem.appendChild(link);
-        searchResultsList.appendChild(listItem);
-    });
-    searchResults.classList.add('active');
-});
+navLinks.forEach(link => link.addEventListener('click', handleNavLinkClick));
+subNavTriggers.forEach(trigger => trigger.addEventListener('mouseover', handleSubNavTrigger));
+subNavTriggers.forEach(trigger => trigger.addEventListener('mouseout', handleSubNavTrigger));
+mobileNavToggle.addEventListener('click', handleMobileNavToggle);
+accordionTriggers.forEach(trigger => trigger.addEventListener('click', handleAccordionTrigger));
+alertCloseButtons.forEach(button => button.addEventListener('click', handleAlertClose));
 
 // Functions
-function fetchSearchResults(searchTerm) {
-    // Implement your search logic here
-    // For demonstration purposes, return some dummy results
-    return [
-        { url: '#result1', title: 'Result 1' },
-        { url: '#result2', title: 'Result 2' },
-        { url: '#result3', title: 'Result 3' },
-    ];
+function handleNavLinkClick(event) {
+event.preventDefault();
+const targetSection = document.querySelector(`#${event.target.getAttribute('href').substring(1)}`);
+sections.forEach(section => section.classList.remove('active'));
+targetSection.classList.add('active');
+}
+
+function handleSubNavTrigger(event) {
+const subNav = event.target.querySelector('.sub-nav');
+if (event.type === 'mouseover') {
+subNav.style.display = 'block';
+} else {
+subNav.style.display = 'none';
+}
+}
+
+function handleMobileNavToggle() {
+mobileNav.classList.toggle('active');
+}
+
+function handleAccordionTrigger(event) {
+const accordionContent = event.target.nextElementSibling;
+accordionContent.classList.toggle('show');
+}
+
+function handleAlertClose() {
+const alert = event.target.parentElement;
+alert.remove();
+}
+
+function init() {
+// Initialize modals
+modals.forEach(modal => {
+const closeButton = modal.querySelector('.close-button');
+closeButton.addEventListener('click', () => modal.style.display = 'none');
+});
+
+// Initialize tooltips
+const tooltips = document.querySelectorAll('.tooltip');
+tooltips.forEach(tooltip => {
+const trigger = tooltip.querySelector('.tooltip-trigger');
+trigger.addEventListener('mouseover', () => tooltip.classList.add('show'));
+trigger.addEventListener('mouseout', () => tooltip.classList.remove('show'));
+});
 }
 
 // Initialize
-document.addEventListener('DOMContentLoaded', () => {
-    // Initialize scroll-to-top button visibility
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 500) {
-            scrollTOTopButton.classList.add('visible');
-        } else {
-            scrollTOTopButton.classList.remove('visible');
-        }
-    });
-});
+init();
 
- Dropdown menu toggling (not required with CSS-only dropdowns)
- const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
- dropdownToggles.forEach((toggle) => {
-     toggle.addEventListener('click', () => {
-         const dropdownMenu = toggle.nextElementSibling;
-         dropdownMenu.classList.toggle('active');
-     });
- });
+// Add event listener for window resize
+window.addEventListener('resize', () => {
+if (window.innerWidth > 768) {
+mobileNav.classList.remove('active');
+}
+});
