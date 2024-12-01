@@ -247,7 +247,9 @@ body {
 /* Responsive Design */
 
 @media only screen and (max-width: 768px) {
-  .pricing-link , .about-link , .contact-link{
+  .top-nav .pricing-link , 
+  .top-nav .about-link , 
+  .top-nav .contact-link{
     display:none;
   }
   .aside-toggle {
