@@ -1,9 +1,7 @@
 // Get elements
 const topNav = document.querySelector('.top-nav');
 const sideNav = document.querySelector('.side-nav');
-const mainContent = document.querySelector('.main-content');
-const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-const mobileNav = document.querySelector('.mobile-nav');
+const mainContent = document.querySelector('.main-content'); 
 const sections = document.querySelectorAll('.section');
 const navLinks = document.querySelectorAll('.nav-link');
 const subNavTriggers = document.querySelectorAll('.dropdown');
@@ -16,8 +14,7 @@ const asideToggle = document.querySelector('.aside-toggle');
 // Add event listeners
 navLinks.forEach(link => link.addEventListener('click', handleNavLinkClick));
 subNavTriggers.forEach(trigger => trigger.addEventListener('mouseover', handleSubNavTrigger));
-subNavTriggers.forEach(trigger => trigger.addEventListener('mouseout', handleSubNavTrigger));
-//mobileNavToggle.addEventListener('click', handleMobileNavToggle);
+subNavTriggers.forEach(trigger => trigger.addEventListener('mouseout', handleSubNavTrigger)); 
 accordionTriggers.forEach(trigger => trigger.addEventListener('click', handleAccordionTrigger));
 alertCloseButtons.forEach(button => button.addEventListener('click', handleAlertClose));
 
@@ -36,10 +33,6 @@ subNav.style.display = 'block';
 } else {
 subNav.style.display = 'none';
 }
-}
-
-function handleMobileNavToggle() {
-mobileNav.classList.toggle('active');
 }
 
 function handleAccordionTrigger(event) {
@@ -73,13 +66,14 @@ init();
 
 // Add event listener for window resize
 window.addEventListener('resize', () => {
+  
 if (window.innerWidth > 768) {
-mobileNav.classList.remove('active');
+ 
 }
+  
 });
 
-asideToggle.addEventListener('click', () => {
-  console.log("A");
+asideToggle.addEventListener('click', () => { 
   sideNav.style.display = sideNav.style.display === 'block' ? 'none' : 'block';
 });
 
