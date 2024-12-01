@@ -89,8 +89,9 @@ document.addEventListener('click', (event) => {
 
   console.log(docsNav.contains(event.target) , sideNav.contains(event.target));
   
-  if (!sideNav.contains(event.target) && !asideToggle.contains(event.target)) {
+  if (!docsNav.contains(event.target) , sideNav.contains(event.target)) {
      alert("A");
+    sideNav.classList.remove('mob-nav');
   }
 });
 
