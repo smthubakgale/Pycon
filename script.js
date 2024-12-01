@@ -20,10 +20,12 @@ alertCloseButtons.forEach(button => button.addEventListener('click', handleAlert
 
 // Functions
 function handleNavLinkClick(event) {
-event.preventDefault();
-const targetSection = document.querySelector(`#${event.target.getAttribute('href').substring(1)}`);
-sections.forEach(section => section.classList.remove('active'));
-targetSection.classList.add('active');
+  event.preventDefault();
+  
+  const targetSection = document.querySelector(`#${event.target.getAttribute('href').substring(1)}`);
+  sections.forEach(section => section.classList.remove('active'));
+  targetSection.classList.add('active');
+  sideNav.classList.remove('mob-nav');
 }
 
 function handleSubNavTrigger(event) {
@@ -84,7 +86,7 @@ asideToggle.addEventListener('click', () => {
 
 document.addEventListener('click', (event) => {
   if (!sideNav.contains(event.target) && !asideToggle.contains(event.target)) {
-    sideNav.style.display = 'none';
+     alert("A");
   }
 });
 
