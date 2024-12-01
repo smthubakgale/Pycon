@@ -92,7 +92,12 @@ document.addEventListener('click', (event) => {
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 if (isMobile) {
-  sideNav.style.display = 'none';
+  if(sideNav.classList.contains('mob-nav')){
+      sideNav.classList.remove('mob-nav');
+   }
+   else{
+      sideNav.classList.add('mob-nav');
+   }
 } else {
-  sideNav.style.display = 'block';
+  sideNav.classList.remove('mob-nav');
 }
