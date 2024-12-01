@@ -55,7 +55,7 @@ body {
   background-color: #f9f9f9;
   padding: 1em;
   overflow-y: auto;
-  box-shadow: none;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
 .side-nav .docs-nav {
