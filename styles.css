@@ -19,6 +19,10 @@ body {
     background-color: #ffa07a; /* Orange-ish background */
     padding: 1em;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .top-nav ul {
@@ -41,6 +45,64 @@ body {
     color: #ccc; /* Light gray text on hover */
 }
 
+/* Side Menu */
+
+.side-nav {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.side-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.side-nav li {
+    margin-bottom: 10px;
+}
+
+.side-nav a {
+    color: #333; /* Dark gray text */
+    text-decoration: none;
+}
+
+.side-nav a:hover {
+    color: #ffa07a; /* Orange-ish text on hover */
+}
+
+.side-nav .dropdown {
+    margin-bottom: 10px;
+}
+
+.side-nav .dropdown ul {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.side-nav .dropdown ul li {
+    margin-bottom: 10px;
+}
+
+.side-nav .dropdown ul li:last-child {
+    margin-bottom: 0;
+}
+
+.side-nav .active {
+    background-color: #ffa07a; /* Orange-ish background */
+    color: #fff; /* White text */
+    padding: 10px;
+    border-radius: 5px;
+}
+
 /* Sections */
 
 .section {
@@ -56,6 +118,20 @@ body {
 
 .section h1 {
     color: #ffa07a; /* Orange-ish headings */
+}
+
+.section p {
+    margin-bottom: 20px;
+}
+
+.section ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.section ol {
+    list-style: decimal;
+    margin-left: 20px;
 }
 
 /* Additional Styles */
@@ -97,4 +173,57 @@ pre {
 
 pre code {
     color: #666;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .top-nav {
+        padding: 0.5em;
+    }
+
+    .top-nav li {
+        margin-right: 10px;
+    }
+
+    .section {
+        padding: 1em;
+    }
+
+    .side-nav {
+        position: relative;
+        height: auto;
+        overflow-y: visible;
+        padding: 0.5em;
+    }
+
+    .side-nav ul {
+        padding: 0;
+    }
+
+    .side-nav li {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-nav {
+        padding: 0.2em;
+    }
+
+    .top-nav li {
+        margin-right: 5px;
+    }
+
+    .section {
+        padding: 0.5em;
+    }
+
+    .side-nav {
+        padding: 0.2em;
+    }
+
+    .side-nav li {
+        margin-bottom: 2px;
+    }
 }
