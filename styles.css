@@ -248,9 +248,30 @@ body {
 }
 
 /* Responsive Design */
-
+/* Mobile Landscape or Tablet */
 @media only screen and (max-width: 768px) {
-  
+    .aside-toggle {
+    display: block;
+  }
+  .side-nav{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+    .side-nav nav{
+      background-color: #333;
+      padding: 1em;
+      width: 80%;
+      max-width: 300px;
+      height: 100%;
+      overflow-y: auto;
+      box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    }
   .flex-container {
     flex-direction: column;
   }
@@ -262,13 +283,16 @@ body {
     margin-left: 0;
   }
 }
-
+/* Mobile Portrait */
 @media only screen and (max-width: 480px) {
   .top-nav .home-link , 
   .top-nav .pricing-link , 
   .top-nav .about-link , 
   .top-nav .contact-link{
     display:none;
+  }
+  .top-nav .home-link2{
+    display:block;
   }
   .aside-toggle {
     display: block;
