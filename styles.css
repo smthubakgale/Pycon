@@ -49,13 +49,13 @@ body {
 }
 
 /* Side Navigation */
-.side-nav {    
-  background-color: #333; /* Dark background */
-  padding: 1em;
+.side-nav {
   flex-basis: 250px;
   flex-shrink: 0;
+  background-color: #f9f9f9;
+  padding: 1em;
+  overflow-y: auto;
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
-  color: #fff; /* Text color changed to white */
 }
 
 .side-nav .docs-nav {
@@ -72,13 +72,13 @@ body {
   margin-bottom: 10px;
 }
 
-.side-nav .docs-nav a { 
+.side-nav .docs-nav a {
+  color: #333;
   text-decoration: none;
-  color: #fff; /* Link text color changed to white */
 }
 
 .side-nav .docs-nav a:hover {
-  color: #ffa07a; /* Link hover color changed to orange */
+  color: #ffa07a;
 }
 
 .side-nav .docs-nav input[type="checkbox"] {
@@ -94,8 +94,8 @@ body {
 }
 
 .side-nav .docs-nav label:hover {
-  background-color: #ffa07a; /* Label hover background changed to orange */
-  color: #333; /* Label hover text color changed to dark */
+  background-color: #ffa07a;
+  color: #fff;
 }
 
 .side-nav .docs-nav ul ul {
