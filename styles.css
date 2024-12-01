@@ -65,7 +65,7 @@ body {
     display: none;
   }
 .mob-nav{
-  display:none;
+  display:block;
 }
 .side-nav {
   flex-basis: 250px;
