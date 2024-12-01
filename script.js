@@ -91,13 +91,3 @@ document.addEventListener('click', (event) => {
 // Check if mobile device
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-if (isMobile) {
-  if(sideNav.classList.contains('mob-nav')){
-      sideNav.classList.remove('mob-nav');
-   }
-   else{
-      sideNav.classList.add('mob-nav');
-   }
-} else {
-  sideNav.classList.remove('mob-nav');
-}
