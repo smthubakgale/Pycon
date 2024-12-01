@@ -7,37 +7,21 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="top-nav">
-    <nav>
-      <ul>
-        <li class="home-link">
-          <a href="#home" class="nav-link">Home</a>
-        </li>
-        <li class="pricing-link">
-          <a href="#pricing" class="nav-link">Pricing</a>
-        </li>
-        <li class="logo">
-          <a href="#">
-            <img src="logo.png" alt="Pycon Logo" width="40" height="40">
-          </a>
-        </li>
-        <li class="sign-up-link">
-          <a href="#sign-up" class="nav-link">Sign Up</a>
-        </li>
-        <li class="sign-in-link">
-          <a href="#sign-in" class="nav-link">Sign In</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
   <div class="container">
+    <header class="top-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
     <div class="flex-container">
       <aside class="side-nav">
         <nav class="docs-nav">
           <ul>
             <li>
-              <input type="checkbox" id="sub-nav-1">
-              <label for="sub-nav-1">User Guide</label>
+              <input type="checkbox" id="menu-1">
+              <label for="menu-1">User Guide</label>
               <ul>
                 <li><a href="#installation">Installation</a></li>
                 <li><a href="#upgrades">Upgrades</a></li>
@@ -45,8 +29,8 @@
               </ul>
             </li>
             <li>
-              <input type="checkbox" id="sub-nav-2">
-              <label for="sub-nav-2">Tutorials</label>
+              <input type="checkbox" id="menu-2">
+              <label for="menu-2">Tutorials</label>
               <ul>
                 <li><a href="#tutorial-1">Tutorial 1</a></li>
                 <li><a href="#tutorial-2">Tutorial 2</a></li>
@@ -57,104 +41,20 @@
           </ul>
         </nav>
       </aside>
-      <div class="main-content">
-        <section id="home" class="section active">
-          <h1>Home</h1>
-          <p>Welcome to Pycon homepage.</p>
-        </section>
-        <section id="pricing" class="section hidden">
-          <h1>Pricing</h1>
-          <p>Pycon pricing plans.</p>
-          <ul>
-            <li>Plan 1: $9.99/month</li>
-            <li>Plan 2: $19.99/month</li>
-            <li>Plan 3: $29.99/month</li>
-          </ul>
-        </section>
-        <section id="sign-up" class="section hidden">
-          <h1>Sign Up</h1>
-          <p>Create a Pycon account.</p>
-          <form>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <button>Sign Up</button>
-          </form>
-        </section>
-        <section id="sign-in" class="section hidden">
-          <h1>Sign In</h1>
-          <p>Log in to your Pycon account.</p>
-          <form>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <button>Sign In</button>
-          </form>
-        </section>
-        <section id="installation" class="section hidden">
+      <main class="main-content">
+        <section id="installation" class="section">
           <h1>Installation</h1>
           <p>Pycon installation guide.</p>
-          <ol>
-            <li>Step 1: Download Pycon</li>
-            <li>Step 2: Install Pycon</li>
-            <li>Step 3: Configure Pycon</li>
-          </ol>
         </section>
-        <section id="upgrades" class="section hidden">
+        <section id="upgrades" class="section">
           <h1>Upgrades</h1>
           <p>Pycon upgrades guide.</p>
-          <ol>
-            <li>Step 1: Check for updates</li>
-            <li>Step 2: Download update</li>
-            <li>Step 3: Install update</li>
-          </ol>
         </section>
-                <section id="configuration" class="section hidden">
+        <section id="configuration" class="section">
           <h1>Configuration</h1>
           <p>Pycon configuration guide.</p>
-          <ol>
-            <li>Step 1: Set up settings</li>
-            <li>Step 2: Configure options</li>
-            <li>Step 3: Save changes</li>
-          </ol>
         </section>
-        <section id="tutorial-1" class="section hidden">
+        <section id="tutorial-1" class="section">
           <h1>Tutorial 1</h1>
           <p>Pycon tutorial 1.</p>
-          <ol>
-            <li>Step 1: Introduction</li>
-            <li>Step 2: Setup</li>
-            <li>Step 3: Deployment</li>
-          </ol>
-        </section>
-        <section id="tutorial-2" class="section hidden">
-          <h1>Tutorial 2</h1>
-          <p>Pycon tutorial 2.</p>
-          <ol>
-            <li>Step 1: Advanced topics</li>
-            <li>Step 2: Best practices</li>
-            <li>Step 3: Troubleshooting</li>
-          </ol>
-        </section>
-        <section id="tutorial-3" class="section hidden">
-          <h1>Tutorial 3</h1>
-          <p>Pycon tutorial 3.</p>
-          <ol>
-            <li>Step 1: Expert techniques</li>
-            <li>Step 2: Optimization</li>
-            <li>Step 3: Security</li>
-          </ol>
-        </section>
-        <section id="api-reference" class="section hidden">
-          <h1>API Reference</h1>
-          <p>Pycon API reference guide.</p>
-          <ul>
-            <li>API endpoints</li>
-            <li>Request/response formats</li>
-            <li>Error handling</li>
-          </ul>
-        </section>
-      </div>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-</html>
+          
