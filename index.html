@@ -27,26 +27,27 @@
                 <li class="sign-in-link">
                     <a href="#sign-in" class="nav-link">Sign In</a>
                 </li>
+                <li class="mobile-nav-toggle">
+                    <button>Menu</button>
+                </li>
             </ul>
         </nav>
     </header>
     <div class="container">
-        <aside class="side-nav">
+        <aside class="aside">
             <nav class="docs-nav">
                 <ul>
-                    <li>
-                        <input type="checkbox" id="sub-nav-1">
-                        <label for="sub-nav-1">User Guide</label>
-                        <ul>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">User Guide</button>
+                        <ul class="dropdown-menu">
                             <li><a href="#installation">Installation</a></li>
                             <li><a href="#upgrades">Upgrades</a></li>
                             <li><a href="#configuration">Configuration</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <input type="checkbox" id="sub-nav-2">
-                        <label for="sub-nav-2">Tutorials</label>
-                        <ul>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">Tutorials</button>
+                        <ul class="dropdown-menu">
                             <li><a href="#tutorial-1">Tutorial 1</a></li>
                             <li><a href="#tutorial-2">Tutorial 2</a></li>
                             <li><a href="#tutorial-3">Tutorial 3</a></li>
@@ -106,53 +107,30 @@
                     <li>Step 3: Install update</li>
                 </ol>
             </section>
-                        <section id="configuration" class="section hidden">
+            <section id="configuration" class="section hidden">
                 <h1>Configuration</h1>
                 <p>Pycon configuration guide.</p>
-                <ol>
-                    <li>Step 1: Set up settings</li>
-                    <li>Step 2: Configure options</li>
-                    <li>Step 3: Save changes</li>
-                </ol>
-            </section>
+                            </section>
             <section id="tutorial-1" class="section hidden">
                 <h1>Tutorial 1</h1>
                 <p>Pycon tutorial 1.</p>
-                <ol>
-                    <li>Step 1: Introduction</li>
-                    <li>Step 2: Setup</li>
-                    <li>Step 3: Deployment</li>
-                </ol>
             </section>
             <section id="tutorial-2" class="section hidden">
                 <h1>Tutorial 2</h1>
                 <p>Pycon tutorial 2.</p>
-                <ol>
-                    <li>Step 1: Advanced topics</li>
-                    <li>Step 2: Best practices</li>
-                    <li>Step 3: Troubleshooting</li>
-                </ol>
             </section>
             <section id="tutorial-3" class="section hidden">
                 <h1>Tutorial 3</h1>
                 <p>Pycon tutorial 3.</p>
-                <ol>
-                    <li>Step 1: Expert techniques</li>
-                    <li>Step 2: Optimization</li>
-                    <li>Step 3: Security</li>
-                </ol>
             </section>
             <section id="api-reference" class="section hidden">
                 <h1>API Reference</h1>
-                <p>Pycon API reference guide.</p>
-                <ul>
-                    <li>API endpoints</li>
-                    <li>Request/response formats</li>
-                    <li>Error handling</li>
-                </ul>
+                <p>Pycon API reference.</p>
             </section>
         </div>
     </div>
+    <div class="overlay"></div>
+
     <script src="script.js"></script>
 </body>
 </html>
