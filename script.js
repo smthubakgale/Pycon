@@ -20,6 +20,16 @@ accordionTriggers.forEach(trigger => trigger.addEventListener('click', handleAcc
 alertCloseButtons.forEach(button => button.addEventListener('click', handleAlertClose));
 
 // Functions
+window.onload = function() {
+  const urlHash = window.location.hash.substring(1);
+  const targetSection = document.querySelector(`#${urlHash}`);
+  
+  if (targetSection) {
+    sections.forEach(section => section.classList.remove('active'));
+    targetSection.classList.add('active');
+    sideNav.classList.remove('mob-nav');
+  }
+};
 function handleNavLinkClick(event) {
   event.preventDefault();
   
