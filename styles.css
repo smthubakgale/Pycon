@@ -73,6 +73,10 @@ body {
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
+.side-nav .contact-link2 , .side-nav .about-link2{
+  display:none;
+}
+
 .side-nav .docs-nav {
   padding: 0;
 }
@@ -325,7 +329,10 @@ body {
       overflow-y: auto;
       box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
     }
-  .side-nav .docs-nav{
+    .side-nav .contact-link2 , .side-nav .about-link2{
+      display:bock;
+    }
+    .side-nav .docs-nav{
       padding:15px;
     }
    .side-nav .docs-nav a {
