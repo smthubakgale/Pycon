@@ -94,8 +94,7 @@ body {
 }
 
 .side-nav .docs-nav label:hover {
-  background-color: #ffa07a;
-  color: #fff;
+  font-weight:bold;
 }
 
 .side-nav .docs-nav ul ul {
