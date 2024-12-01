@@ -74,7 +74,12 @@ if (window.innerWidth > 768) {
 });
 
 asideToggle.addEventListener('click', () => { 
-  sideNav.style.display = sideNav.style.display === 'block' ? 'none' : 'block';
+   if(sideNav.classList.contains('mob-nav')){
+      sideNav.classList.remove('mob-nav');
+   }
+   else{
+      sideNav.classList.add('mob-nav');
+   }
 });
 
 document.addEventListener('click', (event) => {
