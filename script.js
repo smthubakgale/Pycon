@@ -11,8 +11,7 @@ const subNavs = document.querySelectorAll('.sub-nav');
 const modals = document.querySelectorAll('.modal');
 const accordionTriggers = document.querySelectorAll('.accordion');
 const alertCloseButtons = document.querySelectorAll('.alert .close-button');
-const asideToggle = document.querySelector('.aside-toggle');
-const sideNavPopup = document.querySelector('.side-nav-popup');
+const asideToggle = document.querySelector('.aside-toggle'); 
 
 // Add event listeners
 navLinks.forEach(link => link.addEventListener('click', handleNavLinkClick));
@@ -80,12 +79,12 @@ mobileNav.classList.remove('active');
 });
 
 asideToggle.addEventListener('click', () => {
-  sideNavPopup.style.display = sideNavPopup.style.display === 'block' ? 'none' : 'block';
+  sideNav.style.display = sideNav.style.display === 'block' ? 'none' : 'block';
 });
 
 document.addEventListener('click', (event) => {
-  if (!sideNavPopup.contains(event.target) && !asideToggle.contains(event.target)) {
-    sideNavPopup.style.display = 'none';
+  if (!sideNav.contains(event.target) && !asideToggle.contains(event.target)) {
+    sideNav.style.display = 'none';
   }
 });
 
@@ -93,7 +92,7 @@ document.addEventListener('click', (event) => {
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 if (isMobile) {
-  sideNavPopup.style.display = 'none';
+  sideNav.style.display = 'none';
 } else {
-  sideNavPopup.style.display = 'block';
+  sideNav.style.display = 'block';
 }
