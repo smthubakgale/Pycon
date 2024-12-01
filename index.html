@@ -30,24 +30,23 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <div class="container">
         <aside class="side-nav">
             <nav class="docs-nav">
                 <ul>
-                    <li><a href="#introduction" class="nav-link">Introduction</a></li>
-                    <li class="dropdown">
-                        <a href="#user-guide" class="nav-link">User Guide</a>
-                        <ul class="sub-nav">
+                    <li>
+                        <input type="checkbox" id="sub-nav-1">
+                        <label for="sub-nav-1">User Guide</label>
+                        <ul>
                             <li><a href="#installation">Installation</a></li>
                             <li><a href="#upgrades">Upgrades</a></li>
                             <li><a href="#configuration">Configuration</a></li>
-                            <li><a href="#troubleshooting">Troubleshooting</a></li>
-                            <li><a href="#best-practices">Best Practices</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a href="#tutorials" class="nav-link">Tutorials</a>
-                        <ul class="sub-nav">
+                    <li>
+                        <input type="checkbox" id="sub-nav-2">
+                        <label for="sub-nav-2">Tutorials</label>
+                        <ul>
                             <li><a href="#tutorial-1">Tutorial 1</a></li>
                             <li><a href="#tutorial-2">Tutorial 2</a></li>
                             <li><a href="#tutorial-3">Tutorial 3</a></li>
@@ -89,14 +88,6 @@
                     <button>Sign In</button>
                 </form>
             </section>
-            <section id="introduction" class="section hidden">
-                <h1>Introduction</h1>
-                <p>Welcome to Pycon introduction.</p>
-            </section>
-            <section id="user-guide" class="section hidden">
-                <h1>User Guide</h1>
-                <p>Pycon user guide content.</p>
-            </section>
             <section id="installation" class="section hidden">
                 <h1>Installation</h1>
                 <p>Pycon installation guide.</p>
@@ -105,7 +96,7 @@
                     <li>Step 2: Install Pycon</li>
                     <li>Step 3: Configure Pycon</li>
                 </ol>
-                            </section>
+            </section>
             <section id="upgrades" class="section hidden">
                 <h1>Upgrades</h1>
                 <p>Pycon upgrades guide.</p>
@@ -115,7 +106,7 @@
                     <li>Step 3: Install update</li>
                 </ol>
             </section>
-            <section id="configuration" class="section hidden">
+                        <section id="configuration" class="section hidden">
                 <h1>Configuration</h1>
                 <p>Pycon configuration guide.</p>
                 <ol>
@@ -124,44 +115,44 @@
                     <li>Step 3: Save changes</li>
                 </ol>
             </section>
-            <section id="troubleshooting" class="section hidden">
-                <h1>Troubleshooting</h1>
-                <p>Pycon troubleshooting guide.</p>
+            <section id="tutorial-1" class="section hidden">
+                <h1>Tutorial 1</h1>
+                <p>Pycon tutorial 1.</p>
                 <ol>
-                    <li>Common issues</li>
-                    <li>Resolution steps</li>
-                    <li>Additional resources</li>
+                    <li>Step 1: Introduction</li>
+                    <li>Step 2: Setup</li>
+                    <li>Step 3: Deployment</li>
                 </ol>
             </section>
-            <section id="best-practices" class="section hidden">
-                <h1>Best Practices</h1>
-                <p>Pycon best practices guide.</p>
+            <section id="tutorial-2" class="section hidden">
+                <h1>Tutorial 2</h1>
+                <p>Pycon tutorial 2.</p>
                 <ol>
-                    <li>Optimization techniques</li>
-                    <li>Security considerations</li>
-                    <li>Performance tips</li>
+                    <li>Step 1: Advanced topics</li>
+                    <li>Step 2: Best practices</li>
+                    <li>Step 3: Troubleshooting</li>
                 </ol>
             </section>
-            <section id="tutorials" class="section hidden">
-                <h1>Tutorials</h1>
-                <p>Pycon tutorials guide.</p>
+            <section id="tutorial-3" class="section hidden">
+                <h1>Tutorial 3</h1>
+                <p>Pycon tutorial 3.</p>
                 <ol>
-                    <li>Tutorial 1: Getting started</li>
-                    <li>Tutorial 2: Advanced features</li>
-                    <li>Tutorial 3: Expert techniques</li>
+                    <li>Step 1: Expert techniques</li>
+                    <li>Step 2: Optimization</li>
+                    <li>Step 3: Security</li>
                 </ol>
             </section>
             <section id="api-reference" class="section hidden">
                 <h1>API Reference</h1>
                 <p>Pycon API reference guide.</p>
-                <ol>
+                <ul>
                     <li>API endpoints</li>
                     <li>Request/response formats</li>
                     <li>Error handling</li>
-                </ol>
+                </ul>
             </section>
         </div>
-    </main>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
