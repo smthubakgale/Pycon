@@ -57,6 +57,9 @@ body {
   margin-top:-5px; 
   margin-bottom:-8px;
 }
+.top-nav .aside-toggle {
+    display: none;
+  }
 /* Side Navigation */
 .side-nav {
   flex-basis: 250px;
@@ -145,6 +148,9 @@ body {
 /* Responsive Design */
 
 @media only screen and (max-width: 768px) {
+  .aside-toggle {
+    display: block;
+  }
   .flex-container {
     flex-direction: column;
   }
