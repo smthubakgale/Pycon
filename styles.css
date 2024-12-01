@@ -271,12 +271,15 @@ body {
       overflow-y: auto;
       box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
     }
+    .side-nav .docs-nav{
+      padding:15px;
+    }
    .side-nav .docs-nav a {
       color: white; 
     }
     
     .side-nav .docs-nav a:hover {
-      color: #ffa07a;
+      color: #333;
     }
   .flex-container {
     flex-direction: column;
@@ -322,12 +325,15 @@ body {
       overflow-y: auto;
       box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
     }
+  .side-nav .docs-nav{
+      padding:15px;
+    }
    .side-nav .docs-nav a {
       color: white; 
     }
     
     .side-nav .docs-nav a:hover {
-      color: #ffa07a;
+      color: #333;
     }
   
   .flex-container {
