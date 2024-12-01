@@ -263,13 +263,20 @@ body {
     z-index: 1000;
   }
     .side-nav nav{
-      background-color: #333;
-      padding: 1em;
+      background-color: #ffa07a;
+      padding: 0;
       width: 80%;
       max-width: 300px;
       height: 100%;
       overflow-y: auto;
       box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+   .side-nav .docs-nav a {
+      color: white; 
+    }
+    
+    .side-nav .docs-nav a:hover {
+      color: #ffa07a;
     }
   .flex-container {
     flex-direction: column;
@@ -307,14 +314,22 @@ body {
     z-index: 1000;
   }
     .side-nav nav{
-      background-color: #333;
-      padding: 1em;
+      background-color: #ffa07a;
+      padding: 0px;
       width: 80%;
       max-width: 300px;
       height: 100%;
       overflow-y: auto;
       box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
     }
+   .side-nav .docs-nav a {
+      color: white; 
+    }
+    
+    .side-nav .docs-nav a:hover {
+      color: #ffa07a;
+    }
+  
   .flex-container {
     flex-direction: column;
     align-items: center;
