@@ -1,3 +1,5 @@
+
+CSS
 /* Global Styles */
 
 * {
@@ -48,32 +50,39 @@ body {
 /* Side Menu */
 
 .side-nav {
-    background-color: #f9f9f9; /* Light gray background */
-    padding: 1em;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 250px;
     height: 100vh;
+    background-color: #f9f9f9;
+    padding: 1em;
     overflow-y: auto;
     box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
-.side-nav ul {
+.side-nav .docs-nav {
+    padding: 0;
+}
+
+.side-nav .docs-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.side-nav li {
+.side-nav .docs-nav li {
     margin-bottom: 10px;
 }
 
-.side-nav a {
-    color: #333; /* Dark gray text */
+.side-nav .docs-nav a {
+    color: #333;
     text-decoration: none;
 }
 
-.side-nav a:hover {
-    color: #ffa07a; /* Orange-ish text on hover */
+.side-nav .docs-nav a:hover {
+    color: #ffa07a;
 }
 
 .side-nav .dropdown {
@@ -97,13 +106,18 @@ body {
 }
 
 .side-nav .active {
-    background-color: #ffa07a; /* Orange-ish background */
-    color: #fff; /* White text */
+    background-color: #ffa07a;
+    color: #fff;
     padding: 10px;
     border-radius: 5px;
 }
 
-/* Sections */
+/* Main Content */
+
+.main-content {
+    margin-left: 250px;
+    padding: 2em;
+}
 
 .section {
     display: none;
@@ -117,7 +131,7 @@ body {
 }
 
 .section h1 {
-    color: #ffa07a; /* Orange-ish headings */
+    color: #ffa07a;
 }
 
 .section p {
@@ -186,23 +200,12 @@ pre code {
         margin-right: 10px;
     }
 
-    .section {
-        padding: 1em;
-    }
-
     .side-nav {
-        position: relative;
-        height: auto;
-        overflow-y: visible;
-        padding: 0.5em;
+        width: 200px;
     }
 
-    .side-nav ul {
-        padding: 0;
-    }
-
-    .side-nav li {
-        margin-bottom: 5px;
+    .main-content {
+        margin-left: 200px;
     }
 }
 
@@ -215,15 +218,11 @@ pre code {
         margin-right: 5px;
     }
 
-    .section {
-        padding: 0.5em;
-    }
-
     .side-nav {
-        padding: 0.2em;
+        width: 150px;
     }
 
-    .side-nav li {
-        margin-bottom: 2px;
+    .main-content {
+        margin-left: 150px;
     }
 }
