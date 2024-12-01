@@ -359,7 +359,7 @@ body {
 @media (min-width: 769px) {
   .side-nav {
     position: sticky;
-    top: 50px; /* Adjust based on top nav height */
+    top: 60px; /* Adjust based on top nav height */
     max-height: calc(100vh - 50px);
     overflow-y: auto;
   }
