@@ -1,6 +1,7 @@
 // Get elements
 const topNav = document.querySelector('.top-nav');
 const sideNav = document.querySelector('.side-nav');
+const docsNav = document.querySelector('.docs-nav');
 const mainContent = document.querySelector('.main-content'); 
 const sections = document.querySelectorAll('.section');
 const navLinks = document.querySelectorAll('.nav-link');
@@ -85,6 +86,9 @@ asideToggle.addEventListener('click', () => {
 });
 
 document.addEventListener('click', (event) => {
+
+  console.log(docsNav.contains(event.target) , sideNav.contains(event.target));
+  
   if (!sideNav.contains(event.target) && !asideToggle.contains(event.target)) {
      alert("A");
   }
