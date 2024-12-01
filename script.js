@@ -76,6 +76,7 @@ if (window.innerWidth > 768) {
 mobileNav.classList.remove('active');
 }
 });
+/*
 // Add event listener to checkboxes
 document.addEventListener("DOMContentLoaded", function () {
   var checkboxes = document.querySelectorAll(".side-nav .docs-nav input[type='checkbox']");
@@ -93,3 +94,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+*/
