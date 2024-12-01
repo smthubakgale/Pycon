@@ -49,7 +49,6 @@ body {
 }
 
 /* Side Navigation */
-
 .side-nav {
   flex-basis: 250px;
   flex-shrink: 0;
@@ -86,7 +85,7 @@ body {
   display: none;
 }
 
-.side-nav .docs-nav input[type="checkbox"]:checked + ul {
+.side-nav .docs-nav input[type="checkbox"]:checked + label + ul {
   display: block;
 }
 
@@ -99,7 +98,14 @@ body {
   color: #fff;
 }
 
+.side-nav .docs-nav ul ul {
+  display: none;
+  padding-left: 20px;
+}
 
+.side-nav .docs-nav ul ul li {
+  margin-bottom: 5px;
+}
 /* Main Content */
 
 .main-content {
